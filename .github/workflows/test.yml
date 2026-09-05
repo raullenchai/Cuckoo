@@ -7,7 +7,7 @@ concurrency:
 jobs:
   build_macOS:
     name: Build Package on macOS
-    runs-on: manzanita-standard-v6
+    runs-on: manzanita-standard-v7
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,7 +20,7 @@ jobs:
 
   test_macOS:
     name: Build and Test on macOS
-    runs-on: manzanita-standard-v6
+    runs-on: manzanita-standard-v7
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,7 +40,7 @@ jobs:
 
   test_iOS:
     name: Build and Test on iOS simulator
-    runs-on: manzanita-standard-v6
+    runs-on: manzanita-standard-v7
     steps:
       - name: Checkout
         uses: actions/checkout@v4
